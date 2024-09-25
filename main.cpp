@@ -1,6 +1,21 @@
 #include <iostream>
+using std::string;
+using namespace std;
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
-    return 0;
+    struct task {
+        string title, description, status;
+
+        task(){
+            this->title = "";
+            this->description = "";
+            this->status = "";
+        }
+        task(string &title, string &description, string &status){
+            this->title = title;
+            this->description = description;
+            this->status = status;
+        }
+
+    };
 }
