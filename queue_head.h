@@ -1,21 +1,23 @@
-//
-// Created by William McCarty on 6/26/24.
-//
+
 #include <iostream>
 #include <string>
 #include <vector>
 
-struct task {
+struct tasksToDo {
     std::string title, description, status;
 
-    task() : title(""), description(""), status("") {}
-    task(std::string &title, const std::string &description, const std::string &status)
-    : title(title), description(description), status(status){}
+    tasksToDo(){
+        title="";
+        description="";
+        status="";
+    }
+    tasksToDo(std::string &title, std::string &description, std::string &status)
+            : title(title), description(description), status(status){}
 };
 
-void displayTasks(const std::vector<task> &tasks);
-void addTask(std::vector<task> &tasks, const std::string &title, const std::string &description, const std::string &status);
-void remTask(std::vector<task> &tasks);
+void displayTasks(const std::vector<tasksToDo> &tasks);
+void addTask(std::vector<tasksToDo> &tasks,  std::string &title,  std::string &description,  std::string &status);
+void remTask(std::vector<tasksToDo> &tasks);
 
 
 
