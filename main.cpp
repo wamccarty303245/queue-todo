@@ -1,21 +1,15 @@
 #include <iostream>
+#include "queue_head.h"
 using std::string;
 using namespace std;
 
+
 int main() {
-    struct task {
-        string title, description, status;
+    std::vector<task> toDoList;
 
-        task(){
-            this->title = "";
-            this->description = "";
-            this->status = "";
-        }
-        task(string &title, string &description, string &status){
-            this->title = title;
-            this->description = description;
-            this->status = status;
-        }
 
-    };
+
+
+
+
 }
