@@ -7,7 +7,7 @@
 
 void displayTasks(const std::vector<tasksToDo> &tasks) {
     for (size_t i = 0; i < tasks.size(); ++i) {
-        std::cout << i + 1 << tasks[i].title << " - " << tasks[i].description
+        std::cout <<  i + 1 << ". " <<  tasks[i].title << " - " << tasks[i].description
                   << " [" << tasks[i].status << "]" << std::endl;
     }
 }
